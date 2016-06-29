@@ -1,0 +1,8 @@
+<div class='sponsored-items'>
+  <!--h3>Similar Documents</h3-->
+  <ul>
+    <li ng-repeat="bill in sponsored">
+      <a ui-sref="root.view({uri: bill.uri})">{{bill.short_title || bill.bill_id}}</a>
+    </li>
+  </ul>
+</div>
